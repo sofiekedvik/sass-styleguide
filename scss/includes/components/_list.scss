@@ -1,0 +1,28 @@
+.list {
+    &--bullet {
+        li {
+            position: relative;
+            padding-left: 20px;
+            &:before {
+                content: '•';
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+
+    &--numeric {
+        counter-reset: ol;
+        li {
+            counter-increment: ol;
+            position: relative;
+            padding-left: 20px;
+            &:before {
+                content: counter(ol);
+                position: absolute;
+                left: 0;
+                font-weight: bold;
+            }
+        }
+    }
+}

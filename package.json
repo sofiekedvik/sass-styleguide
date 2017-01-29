@@ -1,0 +1,24 @@
+{
+  "name": "sass-styleguide",
+  "version": "1.0.0",
+  "description": "This is a starter-kit for a sass styleguide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sofiekedvik/sass-styleguide.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sofiekedvik/sass-styleguide/issues"
+  },
+  "homepage": "https://github.com/sofiekedvik/sass-styleguide#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.0"
+  }
+}

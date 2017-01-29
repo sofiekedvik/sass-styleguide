@@ -1,0 +1,16 @@
+.section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @include tablet {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    &__heading {
+        margin-top: 15px;
+        font-size: 30px;
+        color: $color--turcoise;
+    }
+    &__sub {
+        margin-top: 10px;
+    }
+}

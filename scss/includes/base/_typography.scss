@@ -1,0 +1,38 @@
+// Default styling
+
+html, body {
+    font-family: $font-family--default;
+    line-height: $line-height--normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: $font-family--additional;
+}
+
+.h1, h1 { @include font-size($font-size--large) }
+.h2, h2 { @include font-size($font-size--medium) }
+.h3, h3 { @include font-size($font-size--small) }
+.h4, h4 { @include font-size($font-size--default) }
+.h5, h5 { @include font-size($font-size--xsmall) }
+
+p { @include font-size($font-size--default) }
+
+@include tablet {
+    .h1, h1 { @include font-size($font-size--xlarge) }
+    .h2, h2 { @include font-size($font-size--large) }
+    .h3, h3 { @include font-size($font-size--medium) }
+    .h4, h4 { @include font-size($font-size--small) }
+    .h5, h5 { @include font-size($font-size--xsmall) }
+
+    p { @include font-size($font-size--small) }
+}
+
+@include desktop {
+    .h1, h1 { @include font-size($font-size--max) }
+    .h2, h2 { @include font-size($font-size--xlarge) }
+    .h3, h3 { @include font-size($font-size--large) }
+    .h4, h4 { @include font-size($font-size--medium) }
+    .h5, h5 { @include font-size($font-size--small) }
+}

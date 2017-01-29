@@ -1,0 +1,15 @@
+/**
+Copy this each time you make a component
+Usage:
+
+//additional comment about variable
+$variable that's used here a lot;
+
+.myComponent {
+    style: style;
+    @include mobile {
+        some mobile style;
+    }
+}
+
+**/

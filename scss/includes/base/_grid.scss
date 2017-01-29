@@ -1,0 +1,43 @@
+/*
+* margins and container-size
+*/
+
+$max-width: 1024px;
+$gutter: 1em;
+$col-gutter: 1em;
+$grid-columns: 12;
+
+/*
+* Breakpoints
+*/
+$breakpoint-small: "only screen and (min-width: 30em)";
+$breakpoint-medium: "only screen and (min-width: 60em)";
+
+.container {
+    width: 100%;
+    max-width: $max-width;
+    padding-left: $gutter;
+    padding-right: $gutter;
+    margin: 0 auto;
+}
+
+.container:after,
+.row:after {
+    @extend %clearfix;
+}
+
+[class*='col-'] {
+    float: left;
+    padding: $col-gutter;
+    width: 100%;
+    min-height: 1px;
+}
+
+@media #{$breakpoint-medium} {
+
+    @for $i from 1 through 12 {
+        .col-#{$i} {
+            width: 100% / 12 * $i;
+        }
+    }
+}
