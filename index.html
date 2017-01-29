@@ -5,22 +5,25 @@
         <title>Styleguide</title>
         <link href="https://fonts.googleapis.com/css?family=Arsenal|Fira+Sans+Condensed" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <!-- Header -->
-        <header>
+        <header class="header">
             <section class="section">
                 <div class="container">
                     <h1>Styleguide</h1>
-                    <h2>Built with SASS/SCSS by &copy; Sofie Kedvik</h2>
-                    <nav>
-                        <li><a href="#typography">Typography</a></li>
-                        <li><a href="#buttons">Buttons</a></li>
-                        <li><a href="#grid">Grid</a></li>
-                        <li><a href="#boxes">Boxes</a></li>
-                    </nav>
+                    <p>This is a styleguide and web-starter-kit built with SASS/SCSS.</p>
                 </div>
             </section>
+            <nav class="nav">
+                <ul class="container">
+                    <li class="nav__list-item"><a href="#typography">Typography</a></li>
+                    <li class="nav__list-item"><a href="#buttons">Buttons</a></li>
+                    <li class="nav__list-item"><a href="#grid">Grid</a></li>
+                    <li class="nav__list-item"><a href="#boxes">Boxes</a></li>
+                </ul>
+            </nav>
         </header>
         <!-- / Header -->
 
@@ -30,47 +33,163 @@
             <section id="typography" class="section">
                 <div class="container">
                     <h2 class="section__heading">Typography</h2>
-                    <h1>Heading 1</h1>
-                    <h2>Heading 2</h2>
-                    <h3>Heading 3</h3>
-                    <h4>Heading 4</h4>
-                    <h5>Heading 5</h5>
-                    <p>Paragraph - default text</p>
-                    <h3 class="section__sub">Bullet</h3>
-                    <ul class="list--bullet">
-                        <li>list item</li>
-                        <li>list item</li>
-                        <li>list item</li>
-                        <li>list item</li>
-                    </ul>
-                    <h3 class="section__sub">Numeric</h3>
-                    <ol class="list--numeric">
-                        <li>list item</li>
-                        <li>list item</li>
-                        <li>list item</li>
-                        <li>list item</li>
-                    </ol>
-                </div>
-            </section>
-            <!-- / Section Typography -->
-            <section id="lists" class="section">
-                <div class="container">
-                    <h2 class="section__heading">Buttons</h2>
-                    <h3 class="section__sub">Default</h3>
-                    <button class="button button--primary">Primary</button>
-                    <button class="button button--secondary">Secondary</button>
-                    <button class="button button--inverted">Inverted</button>
-                    <h3 class="section__sub">Rounded</h3>
-                    <button class="button button--primary button--rounded">Primary</button>
-                    <button class="button button--secondary button--rounded">Secondary</button>
-                    <button class="button button--inverted button--rounded">Inverted</button>
-                    <h3 class="section__sub">Groups</h3>
-                    <div class="button-group">
-                        <button class="button button--secondary button--rounded">Secondary</button>
-                        <button class="button button--inverted button--rounded">Inverted</button>
+                    <div class="row">
+                        <div class="col-6">
+                            <h1>Heading 1</h1>
+                            <h2>Heading 2</h2>
+                            <h3>Heading 3</h3>
+                            <h4>Heading 4</h4>
+                            <h5>Heading 5</h5>
+                            <p>Paragraph - default text</p>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="section__sub">Bullet</h3>
+                            <ul class="list--bullet">
+                                <li class="list__item">list item</li>
+                                <li class="list__item">list item</li>
+                                <li class="list__item">list item</li>
+                                <li class="list__item">list item</li>
+                            </ul>
+                            <h3 class="section__sub">Numeric</h3>
+                            <ol class="list--numeric">
+                                <li class="list__item">list item</li>
+                                <li class="list__item">list item</li>
+                                <li class="list__item">list item</li>
+                                <li class="list__item">list item</li>
+                            </ol>
+                            <h3 class="section__sub">Checkmarks</h3>
+                            <ul class="list--checks">
+                                <li class="list__item">list item</li>
+                                <li class="list__item">list item</li>
+                                <li class="list__item">list item</li>
+                                <li class="list__item">list item</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
+            <!-- / Section Typography -->
+            <!-- Section Buttons -->
+            <section id="buttons" class="section">
+                <div class="container">
+                    <h2 class="section__heading">Buttons</h2>
+                    <div class="row">
+                        <div class="col-6">
+                            <h3 class="section__sub">Default</h3>
+                            <button class="button button--primary">Primary</button>
+                            <button class="button button--secondary">Secondary</button>
+                            <button class="button button--inverted">Inverted</button>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="section__sub">Rounded</h3>
+                            <button class="button button--primary button--rounded">Primary</button>
+                            <button class="button button--secondary button--rounded">Secondary</button>
+                            <button class="button button--inverted button--rounded">Inverted</button>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="section__sub">Groups rounded</h3>
+                            <div class="button-group">
+                                <button class="button button--secondary button--rounded">Secondary</button>
+                                <button class="button button--inverted button--rounded">Inverted</button>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="section__sub">Groups default</h3>
+                            <div class="button-group">
+                                <button class="button button--secondary">Secondary</button>
+                                <button class="button button--inverted">Inverted</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- / Section Buttons -->
+            <!-- Section Grid -->
+            <section id="grid" class="section section--grid">
+                <div class="container">
+                    <h2 class="section__heading">Grid</h2>
+                    <div class="row u-align--center">
+                        <div class="col-12">
+                            <div class="u-bg--green">
+                                <p>col 12</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="u-bg--green">
+                                <p>col 6</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="u-bg--green">
+                                <p>col 6</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="u-bg--green">
+                                <p>col 4</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="u-bg--green">
+                                <p>col 4</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="u-bg--green">
+                                <p>col 4</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="u-bg--green">
+                                <p>col 4</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="u-bg--green">
+                                <p>col 4</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="u-bg--green">
+                                <p>col 4</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="u-bg--green">
+                                <p>col 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- / Section Grid -->
+            <!-- Section Boxes -->
+            <section id="boxes" class="section">
+                <div class="container">
+                    <h2 class="section__heading">Boxes</h2>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="box">
+                                <h3>This is a box</h3>
+                                <p>Hello there im a box</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="box box--dark">
+                                <h3>This is a dark box</h3>
+                                <p>Hello there im a box</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="box box--darker">
+                                <h3>This is a very dark box</h3>
+                                <p>Hello there im a box</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- / Section Boxes -->
         </main>
         <!-- / Main -->
 

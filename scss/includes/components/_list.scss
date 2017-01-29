@@ -1,6 +1,6 @@
 .list {
     &--bullet {
-        li {
+        .list__item {
             position: relative;
             padding-left: 20px;
             &:before {
@@ -13,7 +13,7 @@
 
     &--numeric {
         counter-reset: ol;
-        li {
+        .list__item {
             counter-increment: ol;
             position: relative;
             padding-left: 20px;
@@ -22,6 +22,26 @@
                 position: absolute;
                 left: 0;
                 font-weight: bold;
+            }
+        }
+    }
+
+    &--checks {
+        .list__item {
+            position: relative;
+            padding-left: 20px;
+            &:before {
+                border-style: solid;
+                border-width: 3px 3px 0 0;
+                content: '';
+                display: inline-block;
+                height: 8px;
+                width: 10px;
+                position: absolute;
+                left: 0;
+                top: 25%;
+	            transform: rotate(135deg);
+                vertical-align: top;
             }
         }
     }

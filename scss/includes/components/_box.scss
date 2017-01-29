@@ -1,0 +1,18 @@
+.box {
+    border: 1px solid #e9e7e7;
+    background: #fafafa;
+    border-radius: 8px;
+    padding: 30px;
+
+    &--dark {
+        background: #444445;
+        border: 1px solid #3c3c3c;
+        color: $color--white;
+    }
+
+    &--darker {
+        background: #363537;
+        border: 1px solid #303030;
+        color: $color--white;
+    }
+}

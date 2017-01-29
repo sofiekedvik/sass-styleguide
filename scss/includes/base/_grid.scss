@@ -26,6 +26,11 @@ $breakpoint-medium: "only screen and (min-width: 60em)";
     @extend %clearfix;
 }
 
+.row {
+    margin-left: -$col-gutter;
+    margin-right: -$col-gutter;
+}
+
 [class*='col-'] {
     float: left;
     padding: $col-gutter;
@@ -34,6 +39,15 @@ $breakpoint-medium: "only screen and (min-width: 60em)";
 }
 
 @media #{$breakpoint-medium} {
+
+    @for $i from 1 through 12 {
+        .col-#{$i} {
+            width: 100% / 12 * $i;
+        }
+    }
+}
+
+@media #{$breakpoint-small} {
 
     @for $i from 1 through 12 {
         .col-#{$i} {

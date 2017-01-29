@@ -20,4 +20,8 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
+
+    &-bg--green {
+        background: $color--turcoise;
+    }
 }
