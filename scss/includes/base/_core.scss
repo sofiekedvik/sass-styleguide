@@ -10,6 +10,11 @@
 
 html, body {
     width: 100%;
+    overflow-x: hidden;
+}
+
+.body {
+    @extend %clearfix;
 }
 
 ul { list-style-type: none; }

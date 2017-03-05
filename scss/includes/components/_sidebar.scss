@@ -1,0 +1,26 @@
+.sidebar {
+    position: absolute;
+    right: 0;
+    float: right;
+    height: 100%;
+    background: $color--grey;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+    &--open {
+        transform: translateX(0%);
+        ~ .main {
+            width: 66.66667%;
+        }
+    }
+
+    &__code {
+        padding: 10px;
+        background: $color--black;
+        color: $color--turcoise;
+        margin: 20px 10px;
+    }
+
+    &__preamble {
+        margin-bottom: 20px;
+    }
+}

@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body>
+    <body class="body">
         <!-- Header -->
         <header class="header">
             <section class="section">
@@ -26,9 +26,20 @@
             </nav>
         </header>
         <!-- / Header -->
-
+        <aside class="sidebar col-4">
+            <section>
+                <h2>Main subject</h2>
+                <p class="sidebar__preamble">Descriptiontext bla bla this and that about that.
+                    tiontext bla bla this and that about that.</p>
+                <code class="sidebar__code">
+                    .header {
+                        background: grey;
+                    }
+                </code>
+            </section>
+        </aside>
         <!-- Main -->
-        <main>
+        <main class="main col-12">
             <!-- Section Typography -->
             <section id="typography" class="section">
                 <div class="container">
@@ -141,22 +152,42 @@
                         </div>
                         <div class="col-3">
                             <div class="u-bg--green">
-                                <p>col 4</p>
+                                <p>col 3</p>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="u-bg--green">
-                                <p>col 4</p>
+                                <p>col 3</p>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="u-bg--green">
-                                <p>col 4</p>
+                                <p>col 3</p>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="u-bg--green">
+                                <p>col 3</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="u-bg--green">
                                 <p>col 4</p>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="u-bg--green">
+                                <p>col 8</p>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <div class="u-bg--green">
+                                <p>col 7</p>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="u-bg--green">
+                                <p>col 5</p>
                             </div>
                         </div>
                     </div>
@@ -194,11 +225,12 @@
         <!-- / Main -->
 
         <!-- Footer -->
-        <footer>
+        <footer class="col-12 footer">
             <div class="container">
                 <p>Styleguide built with SASS/SCSS by &copy; Sofie Kedvik</p>
             </div>
         </footer>
         <!-- / Footer -->
+        <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>

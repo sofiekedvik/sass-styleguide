@@ -1,4 +1,15 @@
-$color--black: #000000;
 $color--white: #FFFFFF;
+$color--grey-90: lighten(#000000, 90);
+$color--grey-80: lighten(#000000, 80);
+$color--grey-70: lighten(#000000, 70);
+$color--grey-60: lighten(#000000, 60);
+$color--grey-50: lighten(#000000, 50);
+$color--grey-40: lighten(#000000, 40);
+$color--grey-30: lighten(#000000, 30);
+$color--grey-20: lighten(#000000, 20);
+$color--grey-15: lighten(#000000, 15);
+$color--grey-10: lighten(#000000, 10);
+$color--black: #000000;
 $color--turcoise: #0cc1a3;
 $color--pink: #fa50c0;
+$color--grey: #cccccc;
